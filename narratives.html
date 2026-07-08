@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Narratives — Marco Antonio Noriega</title>
+<meta name="description" content="Get in touch with Marco Antonio Noriega — narratives, collaborations, and general inquiries.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav wrap" aria-label="Primary">
+    <a href="index.html" class="nav-mark">M.A.<span>NORIEGA</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
+      <span></span>
+    </button>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="photography.html">Photography</a>
+      <a href="narratives.html" aria-current="page">Narratives</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero wrap" style="padding-block: clamp(2.4rem, 6vw, 4rem) clamp(2rem, 4vw, 3rem);">
+    <span class="eyebrow">Narratives</span>
+    <h1 style="margin-top:1rem; font-size: clamp(2.2rem, 7vw, 4.2rem);">LET'S TALK</h1>
+    <p class="lede" style="margin-top:1.2rem;">
+      Whether it's a project, a collaboration, or a story worth telling together —
+      send a note below. Details for reaching me directly are listed alongside it.
+    </p>
+  </section>
+
+  <section class="section wrap">
+    <div class="contact-grid">
+
+      <div>
+        <form id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject">
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+          <p class="form-note" id="form-note" role="status"></p>
+        </form>
+      </div>
+
+      <div>
+        <div class="info-panel">
+          <span class="eyebrow">Find Me</span>
+          <div class="map-box" style="margin-top:1rem;">
+            <p>Map placeholder — embed a map here once an address is confirmed.</p>
+          </div>
+
+          <address class="address-line" style="font-style:normal; color: var(--slate);">
+            Street Address Line 1<br>
+            City, State ZIP<br>
+            Country
+          </address>
+
+          <hr class="info-divider">
+
+          <span class="eyebrow">Business Hours</span>
+          <div style="margin-top:0.8rem;">
+            <div class="hours-row"><span>Monday&ndash;Friday</span><span>9:00&ndash;18:00</span></div>
+            <div class="hours-row"><span>Saturday</span><span>10:00&ndash;14:00</span></div>
+            <div class="hours-row"><span>Sunday</span><span>Closed</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer wrap">
+  <div class="footer-row">
+    <span>&copy; 2026 Marco Antonio Noriega</span>
+    <span>Narratives</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
