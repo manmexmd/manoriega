@@ -1,7 +1,4 @@
-/* =========================================================
-   MARCO ANTONIO NORIEGA — shared stylesheet
-   Design tokens: cool muted gallery palette + bold editorial type
-   ========================================================= */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap');
 
@@ -423,6 +420,19 @@ p { margin: 0; color: var(--slate); }
   border: 1px solid var(--line);
   position: relative;
   overflow: hidden;
+}
+
+/* Square and portrait shots get their own true-shaped, centered frame
+   instead of being stretched/cropped into the wide landscape frame. */
+.plate.square .plate-figure {
+  width: auto;
+  aspect-ratio: 1 / 1;
+  margin-inline: auto;
+}
+.plate.portrait .plate-figure {
+  width: auto;
+  aspect-ratio: 2 / 3;
+  margin-inline: auto;
 }
 .plate-figure::before {
   content: '';
