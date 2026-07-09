@@ -1,5 +1,4 @@
 
-
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap');
 
 :root {
@@ -424,23 +423,23 @@ p { margin: 0; color: var(--slate); }
 
 /* Square and portrait shots get their own true-shaped, centered frame
    instead of being stretched/cropped into the wide landscape frame. */
-.plate.square,
-.plate.portrait {
+.plate.orient-square,
+.plate.orient-portrait {
   align-items: center;
 }
-.plate.square .plate-figure {
+.plate.orient-square .plate-figure {
   width: min(85vh, 920px);
   height: auto;
   aspect-ratio: 1 / 1;
 }
-.plate.portrait .plate-figure {
+.plate.orient-portrait .plate-figure {
   width: min(56.7vh, 613px);
   height: auto;
   aspect-ratio: 2 / 3;
 }
 @media (max-width: 640px) {
-  .plate.square .plate-figure { width: 62vh; }
-  .plate.portrait .plate-figure { width: 41.3vh; }
+  .plate.orient-square .plate-figure { width: 62vh; }
+  .plate.orient-portrait .plate-figure { width: 41.3vh; }
 }
 .plate-figure::before {
   content: '';
@@ -724,4 +723,3 @@ p { margin: 0; color: var(--slate); }
   text-transform: uppercase;
   color: var(--slate-soft);
 }
-
