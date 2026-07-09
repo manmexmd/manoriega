@@ -1,3 +1,12 @@
+// Casual copy-protection on images: blocks right-click save and drag-out.
+// Note: this is a deterrent, not real protection — any web image can still
+// be retrieved via browser dev tools since it must be downloaded to display.
+document.querySelectorAll('img').forEach((img) => {
+  img.setAttribute('draggable', 'false');
+  img.addEventListener('contextmenu', (event) => event.preventDefault());
+  img.addEventListener('dragstart', (event) => event.preventDefault());
+});
+
 // Mobile nav toggle
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
@@ -26,3 +35,5 @@ if (contactForm && formNote) {
     formNote.textContent = 'Thanks — your message is ready to send once a form handler is connected.';
   });
 }
+
+
