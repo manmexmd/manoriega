@@ -1,5 +1,4 @@
 
-
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap');
 
 :root {
@@ -424,15 +423,17 @@ p { margin: 0; color: var(--slate); }
 
 /* Square and portrait shots get their own true-shaped, centered frame
    instead of being stretched/cropped into the wide landscape frame. */
+.plate.square,
+.plate.portrait {
+  align-items: center;
+}
 .plate.square .plate-figure {
   width: auto;
   aspect-ratio: 1 / 1;
-  margin-inline: auto;
 }
 .plate.portrait .plate-figure {
   width: auto;
   aspect-ratio: 2 / 3;
-  margin-inline: auto;
 }
 .plate-figure::before {
   content: '';
@@ -716,3 +717,4 @@ p { margin: 0; color: var(--slate); }
   text-transform: uppercase;
   color: var(--slate-soft);
 }
+
